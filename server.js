@@ -6,7 +6,8 @@ const auth=require('./routes/auth')
 app.use(cors());
 const mongoose = require('mongoose');
 mongoose
-.connect('mongodb+srv://Preethi:Sl7w70g8SGW4Su1v@cluster0.pppeqsv.mongodb.net/Book-Recommendation')
+// .connect('mongodb+srv://Preethi:Sl7w70g8SGW4Su1v@cluster0.pppeqsv.mongodb.net/Book-Recommendation')
+.connect('mongodb+srv://Preethi:OkIUwbMDUfqgawz3@cluster0.pppeqsv.mongodb.net/Book-Recommendation')
 .then(()=>console.log("Connected to MongoDB"));
 
 const bookschema = new mongoose.Schema({
